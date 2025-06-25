@@ -1,0 +1,99 @@
+body {
+    transition: all 1s ease;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.motJ1 {
+    margin-left: 40%;
+    margin-top: 10rem;
+    width: 20%;
+    height: 2rem;
+}
+
+.valider {
+    margin-left: 45%;
+    margin-top: 10rem;
+    width: 10%;
+    height: 4rem;
+    font-size: 2rem;
+}
+
+.nuit {
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.jour {
+    border-radius: 0.5rem;
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.pendu {
+    margin-left: 30%;
+}
+
+.lettre {
+    width: 5rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    height: 3rem;
+    transition: all 1s ease;
+}
+
+.container {
+    margin: 0%;
+}
+
+.abandon {
+    width: 20%;
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .nuit {
+        border-radius: 0rem;
+        background-color: black;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .jour {
+        border-radius: 0rem;
+        background-color: white;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .pendu {
+        margin-left: 0rem;
+        height: 30rem;
+        width: 100%;
+    }
+
+    .lettre {
+        width: 1.5rem;
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .abandon {
+        width: 40%;
+    }
+}
