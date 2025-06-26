@@ -17,6 +17,7 @@
     <div class="container mx-auto">
         <div class="row">
             <div class="col-lg-10 col-8 text-lg-center mx-lg-auto ps-3 ps-lg-5">
+                <p id="gameOver" class="h1 text-danger" style="display: none;">GAME OVER</p>
                 <p id="motADevine" class="h1">MOT J1</p>
             </div>
             <div class="col-lg-1 col-2 nuitJour mx-auto mx-lg-0">
@@ -25,50 +26,51 @@
             </div>
         </div>
     </div>
+    <img src="assets/img/Confetti/5811153573a8496be24aec27f9ae16c5CsrgYiH554PN9B5c-0.png" alt="Confetti" class="confetti" id="confetti" style="display: none;">
     <img src="assets/img/pendu0.png" alt="Le pendu" class="pendu" id="pendu">
 
     <div class="container text-center clavier mx-auto">
-        <div class="row">
-            <div class="col">
-                <button class="lettre" style="background-color: white; color: black;">A</button>
-                <button class="lettre" style="background-color: white; color: black;">Z</button>
-                <button class="lettre" style="background-color: white; color: black;">E</button>
-                <button class="lettre" style="background-color: white; color: black;">R</button>
-                <button class="lettre" style="background-color: white; color: black;">T</button>
-                <button class="lettre" style="background-color: white; color: black;">Y</button>
-                <button class="lettre" style="background-color: white; color: black;">U</button>
-                <button class="lettre" style="background-color: white; color: black;">I</button>
-                <button class="lettre" style="background-color: white; color: black;">O</button>
-                <button class="lettre" style="background-color: white; color: black;">P</button>
+        <div class="row" style="display: grid;" id="clavier1">
+            <div class="col mb-2">
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('A')" id="A">A</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('Z')" id="Z">Z</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('E')" id="E">E</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('R')" id="R">R</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('T')" id="T">T</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('Y')" id="Y">Y</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('U')" id="U">U</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('I')" id="I">I</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('O')" id="O">O</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('P')" id="P">P</button>
+            </div>
+        </div>
+        <div class="row" style="display: grid;" id="clavier2">
+            <div class="col mb-2">
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('Q')" id="Q">Q</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('S')" id="S">S</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('D')" id="D">D</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('F')" id="F">F</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('G')" id="G">G</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('H')" id="H">H</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('J')" id="J">J</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('K')" id="K">K</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('L')" id="L">L</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('M')" id="M">M</button>
+            </div>
+        </div>
+        <div class="row" style="display: grid;" id="clavier3">
+            <div class="col mb-2">
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('W')" id="W">W</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('X')" id="X">X</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('C')" id="C">C</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('V')" id="V">V</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('B')" id="B">B</button>
+                <button class="lettre" style="background-color: white; color: black;" onclick="tentative('N')" id="N">N</button>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <button class="lettre" style="background-color: white; color: black;">Q</button>
-                <button class="lettre" style="background-color: white; color: black;">S</button>
-                <button class="lettre" style="background-color: white; color: black;">D</button>
-                <button class="lettre" style="background-color: white; color: black;">F</button>
-                <button class="lettre" style="background-color: white; color: black;">G</button>
-                <button class="lettre" style="background-color: white; color: black;">H</button>
-                <button class="lettre" style="background-color: white; color: black;">J</button>
-                <button class="lettre" style="background-color: white; color: black;">K</button>
-                <button class="lettre" style="background-color: white; color: black;">L</button>
-                <button class="lettre" style="background-color: white; color: black;">M</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <button class="lettre" style="background-color: white; color: black;">W</button>
-                <button class="lettre" style="background-color: white; color: black;">X</button>
-                <button class="lettre" style="background-color: white; color: black;">C</button>
-                <button class="lettre" style="background-color: white; color: black;">V</button>
-                <button class="lettre" style="background-color: white; color: black;">B</button>
-                <button class="lettre" style="background-color: white; color: black;">N</button>
-                <button class="lettre" style="background-color: white; color: black;">-</button>
-            </div>
-        </div>
-        <div class="row">
-            <button type="button" class="btn btn-danger abandon mt-lg-5 mt-3 mx-auto">Abandonner ?</button>
+            <button type="button" class="btn btn-danger abandon mt-lg-5 mt-3 mx-auto" style="display: inline;" id="abandon" onclick="gameOver()">Abandonner ?</button>
+            <button type="button" class="btn btn-primary abandon mt-lg-5 mt-3 mx-auto" style="display: none;" id="rejouer" onclick="rejouer()">Rejouer ?</button>
         </div>
     </div>
 
