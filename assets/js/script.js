@@ -85,9 +85,7 @@ function tentative(lettre) {
     }
 
     //Condition de victoire ou de défaite
-
     const areEqual = motCacher.every((value, index) => value === motDevine[index]) //Verifie si les 2 tableaux sont identique (booléen)
-
     if (areEqual == 1) {
         console.log("win")
         victoire()
