@@ -134,7 +134,7 @@ const indicesPendu = [
     "Savoir en volumes infinis",
     "Dieux, héros et légendes antiques",
     "Normes strictes à respecter",
-    "Comparaison sans ‘comme'",
+    "Comparaison sans 'comme'",
     "Temple du savoir en papier",
     "Proposition non encore prouvée",
     "Art du secret codé",
@@ -286,7 +286,7 @@ while (initialisation != 1) {
 
 //Le jeu
 function tentative(lettre) {
-    let trouve = false;
+    let trouve = false
 
     //Cherche si la lettre est existante dans le mot pour renvoie true
     motDevine.forEach(function (char, index) {
