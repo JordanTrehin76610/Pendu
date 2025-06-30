@@ -414,53 +414,64 @@ const indicesPendu = [
   "Pour cuire des aliments sur le feu"
 ];
 
-let categorie = ["animaux", "animaux", "objets", "objets", "nourriture", "objets", "objets", "objets", "couleurs", "couleurs",
-  "elements", "elements", "nature", "elements", "elements", "elements", "elements", "elements", "corps", "corps",
-  "corps", "corps", "objets", "elements", "nourriture", "nourriture", "nourriture", "nourriture", "elements", "elements",  "animaux", "animaux", "objets", "objets", "nourriture", "objets", "objets", "objets", "couleurs", "couleurs",
-  "elements", "elements", "nature", "elements", "elements", "elements", "elements", "elements", "corps", "corps",
-  "corps", "corps", "objets", "elements", "nourriture", "nourriture", "nourriture", "nourriture", "elements", "elements",  "objets", "objets", "concepts", "objets", "animaux", "objets", "objets", "objets", "objets", "concepts",
-  "concepts", "nature", "formes", "objets", "concepts", "objets", "objets", "personnes", "personnes", "concepts",
-  "concepts", "concepts", "animaux", "concepts", "concepts", "concepts", "concepts", "lieux", "concepts", "concepts",   // personnages
+const categories = [
+  // Facile (1-30)
+  "animaux","animaux","objets","objets","nourriture","objets","objets","objets","couleurs","couleurs",
+  "elements","elements","nature","elements","elements","nature","elements","elements","corps","corps",
+  "corps","corps","objets","elements","nourriture","nourriture","nourriture","nourriture","elements","elements",
+
+  // Moyen (31-70)
+  "animaux","objets","objets","objets","objets","objets","animaux","nature","objets","vetements",
+  "animaux","objets","lieux","elements","objets","animaux","nourriture","elements","nourriture","animaux",
+  "animaux","objets","objets","objets","concepts","animaux","objets","objets","vetements","nourriture",
+  "concepts","lieux","objets","lieux","objets","objets","objets","objets","animaux","objets",
+
+  // Difficile (71-100)
+  "objets","objets","concepts","objets","animaux","objets","objets","objets","objets","concepts",
+  "concepts","nature","concepts","objets","concepts","concepts","objets","vetements","concepts","concepts",
+  "concepts","concepts","animaux","concepts","concepts","concepts","concepts","objets","concepts","concepts",
+
+  // Personnages et célébrités
   "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
   "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
   "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
 
-  // séries & films
+  // Séries & films
   "serie","serie","serie","serie","serie","serie","serie","serie","serie","serie",
   "serie","serie","serie","serie","serie","serie","serie","serie","serie","serie",
 
-  // jeux vidéo
+  // Jeux vidéo
   "jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu",
   "jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu",
 
-  // univers & objets cultes
+  // Univers & objets cultes
   "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
   "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
 
-  // groupes, marques, noms liés pop culture
+  // Groupes, marques, noms liés à pop culture
   "groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe",
   "groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe",
-
-  // personnages divers & jeux
   "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
   "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
   "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
   "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
 
-  // films & mangas
+  // Films & mangas
   "film","film","film","film","film","film","film","film","film","film",
   "manga","manga","manga","manga","manga","manga","manga","manga","manga","manga",
   "serie","serie","serie","serie","serie","serie","serie","serie","serie","serie",
 
-  // jeux vidéo & autres
+  // Jeux vidéo & autres
   "jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu",
   "film","film","film","film","film","film","film","film","film","film",
 
-  // objets quotidiens
+  // Objets quotidiens
   "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
   "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
   "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
-  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet"]
+  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet"
+];
+
 
 
 let random = Math.floor(Math.random() * motsPendu.length)
