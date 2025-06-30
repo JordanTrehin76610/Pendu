@@ -414,6 +414,54 @@ const indicesPendu = [
   "Pour cuire des aliments sur le feu"
 ];
 
+let categorie = ["animaux", "animaux", "objets", "objets", "nourriture", "objets", "objets", "objets", "couleurs", "couleurs",
+  "elements", "elements", "nature", "elements", "elements", "elements", "elements", "elements", "corps", "corps",
+  "corps", "corps", "objets", "elements", "nourriture", "nourriture", "nourriture", "nourriture", "elements", "elements",  "animaux", "animaux", "objets", "objets", "nourriture", "objets", "objets", "objets", "couleurs", "couleurs",
+  "elements", "elements", "nature", "elements", "elements", "elements", "elements", "elements", "corps", "corps",
+  "corps", "corps", "objets", "elements", "nourriture", "nourriture", "nourriture", "nourriture", "elements", "elements",  "objets", "objets", "concepts", "objets", "animaux", "objets", "objets", "objets", "objets", "concepts",
+  "concepts", "nature", "formes", "objets", "concepts", "objets", "objets", "personnes", "personnes", "concepts",
+  "concepts", "concepts", "animaux", "concepts", "concepts", "concepts", "concepts", "lieux", "concepts", "concepts",   // personnages
+  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
+  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
+  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
+
+  // séries & films
+  "serie","serie","serie","serie","serie","serie","serie","serie","serie","serie",
+  "serie","serie","serie","serie","serie","serie","serie","serie","serie","serie",
+
+  // jeux vidéo
+  "jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu",
+  "jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu",
+
+  // univers & objets cultes
+  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
+  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
+
+  // groupes, marques, noms liés pop culture
+  "groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe",
+  "groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe",
+
+  // personnages divers & jeux
+  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
+  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
+  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
+  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
+
+  // films & mangas
+  "film","film","film","film","film","film","film","film","film","film",
+  "manga","manga","manga","manga","manga","manga","manga","manga","manga","manga",
+  "serie","serie","serie","serie","serie","serie","serie","serie","serie","serie",
+
+  // jeux vidéo & autres
+  "jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu",
+  "film","film","film","film","film","film","film","film","film","film",
+
+  // objets quotidiens
+  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
+  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
+  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
+  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet"]
+
 
 let random = Math.floor(Math.random() * motsPendu.length)
 let fun = Math.floor(Math.random() * 100)
@@ -434,11 +482,13 @@ while (initialisation != 1) {
     ost.play()
     motDevine = motsPendu[random].toUpperCase().split('')
     indice = indicesPendu[random]
+    cat = categorie[random]
 
     for (let i = 0; i < motDevine.length; i++) {
         motCacher[i] = ' _ '
     }
     document.getElementById("motADevine").textContent = motCacher.join("")
+    document.getElementById("categorie").textContent = `Catégorie: ${cat}`
     document.getElementById("indice").textContent = indice
     initialisation = 1
     console.log(`Vous avez le mot n°${random + 1} à deviner`)
