@@ -415,62 +415,109 @@ const indicesPendu = [
 ];
 
 const categories = [
-  // Facile (1-30)
-  "animaux","animaux","objets","objets","nourriture","objets","objets","objets","couleurs","couleurs",
-  "elements","elements","nature","elements","elements","nature","elements","elements","corps","corps",
-  "corps","corps","objets","elements","nourriture","nourriture","nourriture","nourriture","elements","elements",
+  // Facile
+  "objet", "animal", "lieu", "objet", "aliment", "objet", "objet", "objet", "couleur", "couleur",
+  "nature", "temps", "nature", "nature", "élément", "nature", "élément", "astre", "corps", "corps",
+  "corps", "corps", "lieu", "élément", "aliment", "aliment", "aliment", "aliment", "temps", "élément",
 
-  // Moyen (31-70)
-  "animaux","objets","objets","objets","objets","objets","animaux","nature","objets","vetements",
-  "animaux","objets","lieux","elements","objets","animaux","nourriture","elements","nourriture","animaux",
-  "animaux","objets","objets","objets","concepts","animaux","objets","objets","vetements","nourriture",
-  "concepts","lieux","objets","lieux","objets","objets","objets","objets","animaux","objets",
+  // Moyen
+  "animal", "objet", "vêtement", "objet", "objet", "objet", "animal", "nature", "objet", "vêtement",
+  "animal", "objet", "lieu", "élément", "objet", "animal", "aliment", "élément", "aliment", "animal",
+  "animal", "objet", "objet", "objet", "concept", "animal", "objet", "lieu", "vêtement", "aliment",
+  "animal", "lieu", "objet", "lieu", "objet", "objet", "objet", "objet", "animal", "objet",
 
-  // Difficile (71-100)
-  "objets","objets","concepts","objets","animaux","objets","objets","objets","objets","concepts",
-  "concepts","nature","concepts","objets","concepts","concepts","objets","vetements","concepts","concepts",
-  "concepts","concepts","animaux","concepts","concepts","concepts","concepts","objets","concepts","concepts",
+  // Difficile
+  "objet", "objet", "concept", "objet", "animal", "objet", "objet", "objet", "objet", "concept",
+  "concept", "nature", "forme", "instrument", "concept", "objet", "objet", "profession", "personne", "concept",
+  "concept", "mot", "animal", "concept", "concept", "concept", "langage", "lieu", "concept", "concept",
 
   // Personnages et célébrités
-  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
-  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
-  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
+  "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage",
+  "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage",
+  "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage",
 
   // Séries & films
-  "serie","serie","serie","serie","serie","serie","serie","serie","serie","serie",
-  "serie","serie","serie","serie","serie","serie","serie","serie","serie","serie",
+  "série", "série", "série", "série", "série", "série", "série", "série", "série", "série",
+  "série", "série", "série", "série", "série", "série", "série", "série", "série", "série",
 
   // Jeux vidéo
-  "jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu",
-  "jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu",
+  "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu",
+  "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu",
 
   // Univers & objets cultes
-  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
-  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
+  "objet", "objet", "objet", "objet", "objet", "objet", "objet", "objet", "objet", "objet",
+  "objet", "objet", "univers", "objet", "objet", "univers", "objet", "univers", "objet", "personnage",
 
   // Groupes, marques, noms liés à pop culture
-  "groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe",
-  "groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe","groupe",
-  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
-  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
-  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
-  "personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage","personnage",
+  "groupe", "groupe", "groupe", "univers", "univers", "studio", "studio", "plateforme", "marque", "studio",
+  "marque", "marque", "marque", "plateforme", "plateforme", "plateforme", "plateforme", "marque", "marque", "personnage",
+  "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage",
+  "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage",
+  "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage",
+  "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage",
+  "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage", "personnage",
+  "film", "film", "film", "film", "film", "film", "film", "film", "film", "film",
+  "manga", "manga", "manga", "manga", "manga", "manga", "manga", "manga", "manga", "manga",
+  "série", "série", "série", "série", "série", "série", "série", "série", "série", "série",
+  "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu", "jeu",
+  "anime", "anime", "anime", "anime", "anime", "anime", "anime", "anime", "anime", "anime",
 
-  // Films & mangas
-  "film","film","film","film","film","film","film","film","film","film",
-  "manga","manga","manga","manga","manga","manga","manga","manga","manga","manga",
-  "serie","serie","serie","serie","serie","serie","serie","serie","serie","serie",
-
-  // Jeux vidéo & autres
-  "jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu","jeu",
-  "film","film","film","film","film","film","film","film","film","film",
-
-  // Objets quotidiens
-  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
-  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
-  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet",
-  "objet","objet","objet","objet","objet","objet","objet","objet","objet","objet"
+  // Objets du quotidien
+  "objet", "objet", "objet", "objet", "objet", "objet", "objet", "objet", "objet", "vêtement",
+  "vêtement", "vêtement", "objet", "objet", "objet", "objet", "objet", "objet", "objet", "objet",
+  "objet", "objet", "objet", "objet", "objet", "objet", "lieu", "objet", "objet", "vêtement",
+  "véhicule", "véhicule", "véhicule", "véhicule", "élément", "objet", "objet", "objet", "objet", "objet", "objet",    // chaise
+"objet",    // fenetre
+"objet",    // fourchette
+"objet",    // assiette
+"objet",    // lampe
+"objet",    // telephone
+"objet",    // clavier
+"objet",    // sac
+"objet",    // montre
+"vêtement", // chaussure
+"vêtement", // chemise
+"vêtement", // pantalon
+"objet",    // rideau
+"objet",    // ordinateur
+"objet",    // stylo
+"objet",    // livre
+"objet",    // voiture
+"objet",    // bouteille
+"objet",    // cle
+"objet",    // portefeuille
+"objet",    // valise
+"objet",    // verre
+"objet",    // table
+"objet",    // tasse
+"objet",    // canape
+"vêtement", // manteau
+"objet",    // chapeau
+"objet",    // oreiller
+"objet",    // coussin
+"objet",    // frigo
+"objet",    // miroir
+"objet",    // serviette
+"objet",    // balai
+"objet",    // poubelle
+"objet",    // plafond
+"objet",    // sol
+"objet",    // mur
+"objet",    // porte
+"objet",    // tiroir
+"objet",    // lunettes
+"véhicule", // camion
+"véhicule", // avion
+"véhicule", // bus
+"véhicule", // velo
+"élément",  // feu
+"objet",    // eponge
+"objet",    // savon
+"objet",    // brosse
+"objet",    // rideau
+"objet"     // poele
 ];
+
 
 
 
@@ -485,25 +532,24 @@ let initialisation = 0
 
 
 
-
 // Cache le mot pour le joueur
 while (initialisation != 1) {
-
 
     ost.play()
     motDevine = motsPendu[random].toUpperCase().split('')
     indice = indicesPendu[random]
-    cat = categorie[random]
+    cat = categories[random]
 
     for (let i = 0; i < motDevine.length; i++) {
         motCacher[i] = ' _ '
     }
     document.getElementById("motADevine").textContent = motCacher.join("")
-    document.getElementById("categorie").textContent = `Catégorie: ${cat}`
     document.getElementById("indice").textContent = indice
+    document.getElementById("categorie").textContent = `Catégorie: ${cat}`
     initialisation = 1
     console.log(`Vous avez le mot n°${random + 1} à deviner`)
-    ost.play()
+    ost.play()    
+    
 
 }
 
