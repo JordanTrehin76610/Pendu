@@ -1,1 +1,1 @@
-+ de 200 mots !!!!!! Jouez en solo à ce Pendu !
++ Un total de 200 mots !!!!!! Jouez en solo à ce Pendu !
